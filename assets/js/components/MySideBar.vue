@@ -8,26 +8,30 @@
     type="is-light"
     open
     >
-        <div class="p-1">
+        <!-- <div class="p-1"> -->
         <b-menu class="is-custom-mobile">
             <b-menu-list label="Menu">
-            <b-menu-item icon="information-outline" label="Mesin Kasir"></b-menu-item>
-            <b-menu-item icon="information-outline" label="Riwayat Penjualan"></b-menu-item>
+                <b-menu-item icon="store" label="Beranda" tag="router-link" :to="{ path: '/' }"></b-menu-item>
+                <b-menu-item expanded icon="settings" label="Administrasi">
+                    <b-menu-item icon="account" label="Users"></b-menu-item>
+                    <b-menu-item icon="cellphone-link" label="Devices"></b-menu-item>
+                    <b-menu-item icon="cash-multiple" label="Payments" disabled></b-menu-item>
+                </b-menu-item>
             </b-menu-list>
         </b-menu>
-        </div>
+        <!-- </div> -->
     </b-sidebar>
   </section>
 </template>
 
 <script>
 export default {
-    name:"SidebarCashier",
+    name:"MySideBar",
   data() {
     return {
-      expandOnHover: false,
+      expandOnHover: true,
       mobile: "reduce",
-      reduce: false
+      reduce: true
     };
   }
 };

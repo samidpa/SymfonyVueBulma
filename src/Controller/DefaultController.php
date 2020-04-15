@@ -18,26 +18,16 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/product", name="product")
-     */
-    public function product()
-    {
-        return $this->render('product.html.twig');
-    }
-    
-    /**
-     * @Route("/cashier", name="cashier")
-     */
-    public function cashier()
-    {
-        return $this->render('cashier.html.twig');
-    }
-
-    /**
      * @Route("/getdata", name="get_data")
      */
     public function getData()
     {
-        return new JsonResponse(array('message' => 'Dimas!'), 200);
+        $data = array(
+            'hardCoder' => '100%',
+            'google' => '100%',
+            'words' => 'From Here, What Will Happen To This Page',
+            'sentence' => 'Slow Coder, Please Wait'
+        );
+        return new JsonResponse($data, 200);
     }
 }

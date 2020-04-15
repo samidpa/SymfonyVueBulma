@@ -1,31 +1,15 @@
 import Router from 'vue-router'
   
 // components
-import Product from './pages/Product'
-// import notfound from '../components/notFound'
+import Home from './pages/Home'
   
 export default new Router({
     mode: 'history',
     routes: [
-        // {
-        //     path: '/',
-        //     name: 'shop',
-        //     component: Shop
-        // },
-        // {
-        //     path: '/cashier',
-        //     name: 'cashier',
-        //     component:Cashier
-        // },
         {
-            path: '/product',
-            name: 'prodcut',
-            component: Product
+            path: '/',
+            name: 'home',
+            component: Home
         },
-        // {
-        //     path: '*',       // * => wildcard. Matches all other routes
-        //     name: 'notfound',
-        //     component: notfound
-        // }
     ]
 })

@@ -11,19 +11,16 @@
             </template>
             <template slot="start">
                 <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                    Toko
+                    Home
                 </b-navbar-item>
-                <b-navbar-item tag="router-link" :to="{ path: '/cashier' }">
-                    Kasir
-                </b-navbar-item>
-                <!-- <b-navbar-dropdown label="Info">
+                <b-navbar-dropdown label="Info">
                     <b-navbar-item href="#">
                         About
                     </b-navbar-item>
                     <b-navbar-item href="#">
                         Contact
                     </b-navbar-item>
-                </b-navbar-dropdown> -->
+                </b-navbar-dropdown>
             </template>
 
             <template slot="end">
@@ -55,9 +52,9 @@
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                <strong>Free Temp</strong> by <a href="https://jgthms.com">Dimas P Andrianto</a>.
+                <!-- <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>. -->
                 </p>
             </div>
         </footer>
